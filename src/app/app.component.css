@@ -1,0 +1,215 @@
+/*Navigation DIV*/
+.NavigationBar{
+    padding: 20px;
+    top: 0;
+    left: 0;
+    margin: 0,0,0,0;
+    display: flex;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*Navi Image Hover*/
+.NavigationBar img:hover{
+opacity: 0.8;
+}
+/*Navigation Links Content*/
+.navigation-button{
+    background-color: transparent;
+    border: transparent;
+    font-size: 17px;
+    font-weight: lighter;
+    color: white;
+    margin-left: 25px;
+    height: 60px;
+}
+.navigation-button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+/*Navigation Space to set flex*/
+.Spacer{
+    flex: 0.30;
+}
+/*Navigation Space2 to set flex*/
+.Spacer2{
+    flex: 0.35;
+}
+
+/*Download now button Edit*/
+.downloadNow{
+    border-color: white;
+    background-color: white;
+    font-weight: 550;
+    color: rgb(32, 191, 212);
+    box-shadow:none;
+    height: 45px;
+    display: inline-block;
+    border-color: transparent;
+}
+.downloadNow:hover{
+    color: rgb(76, 117, 122);
+    opacity: 0.8;
+}
+.downloadNow:active{
+    opacity: 1;
+}
+.downloadNow span{
+    line-height: 28px;
+    display: inline;
+    font-size: 15px;
+    vertical-align: middle;
+
+}
+.DownloadIcon{
+    display: inline;
+    font-size: 19px;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/*Content Middle*/
+.Content{
+   color: white;
+   position:Fixed;
+   left: 50%;
+   top: 34%;
+   margin-left: -230px;
+   text-align: center;
+}
+#PartyIcon{
+    margin-bottom: 22px;    
+}
+
+#description{
+font-weight: lighter;
+margin-bottom: 32px;
+word-wrap: normal;
+animation: contentHide 2s;
+
+}
+
+/*Content BUtton Styling*/
+.ContentButton{
+    border-color: white;
+    background-color: white;
+    font-weight: 550;
+    color: rgb(76, 117, 122);
+    box-shadow:none;
+    height: 55px;
+    display: inline-block;
+    border-color: transparent;
+   animation: contentHide 2s;
+   width: 230px;
+
+}
+
+.ContentButton:hover{
+    opacity: 0.8;
+}
+.ContentButton:active{
+    opacity: 1;
+}
+.ContentButton a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(76, 117, 122);
+}
+.ContentButton2{
+    border-color: white;
+    background-color: white;
+    font-weight: 550;
+    color: rgb(76, 117, 122);
+    box-shadow:none;
+    height: 55px;
+    display: inline-block;
+    border-color: transparent;
+   animation: contentHide 2s;
+    width: 230px;
+    margin-left: 40px;
+}
+.ContentButton2:hover{
+    opacity: 0.8;
+}
+.ContentButton2:active{
+    opacity: 1;
+}
+
+.animateImg{
+    animation: logofade 2s;
+
+}
+
+.gallery{
+   position:Fixed;
+   left: 25%;
+   top: 10%;
+   margin-left: -230px;
+   text-align: center;
+   z-index: 1000;
+  visibility: hidden;
+
+}
+.gallery img{
+    width: 100%;
+  max-width: 1330px;
+  min-width: 300px;
+  height: 70%;
+  max-height: 700px;
+
+  background-size: cover center fixed;
+}
+.gallery2{
+    position:Fixed;
+    left: 50%;
+    top: 10%;
+    margin-left: -230px;
+    text-align: center;
+   visibility: hidden;
+
+    z-index: 1000;
+ }
+ .gallery2 img{
+     width: 100%;
+   max-width: 830px;
+   min-width: 400px;
+   height: auto;
+ }
+/*ANIMATION*/
+@media all and (max-width:480px){
+    .gallery img{
+        width: 75%;
+     
+    }
+    .gallery{
+        left: 30%;
+        top: 30%;
+
+     }
+}
+
+@keyframes logofade{
+    0%{
+        opacity: 0;
+        
+        transform: translateX(-110%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes contentHide{
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    
+    }
+}
